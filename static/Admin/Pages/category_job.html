@@ -1,93 +1,225 @@
-<div class="row">
-    <h1 class="h3 mb-3"><strong>Category Job</strong></h1>
-    <div class="  d-flex">
-        <div class="card flex-fill" style="border: 2px solid #029393;border-radius: 9px;">
-            <div class="card-header">
-                <h5 class="card-title mb-0">Add Category Job</h5>
-                <div class="d-flex mt-2">
-                    <input type="text" class="form-control" placeholder="Input">
-                    <button class="btn btn-outline-primary btn-sm rounded-3 ms-2" style="width: 40px; height: 40px;">
-                        <i class="align-middle" data-feather="plus-circle"></i>
-                    </button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords"
+        content="admin, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="/img/icons/icon-48x48.png" />
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+
+
+    <title>Admin </title>
+
+    <link href="/static/css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .sidebar-items:hover .sidebar-link {
+            background-color: #187644;
+            /* Màu nền khi hover */
+            color: #f1f3f6;
+            /* Màu chữ khi hover */
+        }
+
+        .sidebar-item.active .sidebar-link {
+            background-color: #187644;
+            color: #ffffff;
+        }
+
+        .sidebar-items {
+            margin-bottom: 15px;
+            /* Khoảng cách giữa các mục */
+        }
+
+        /* Phần thông báo */
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745;
+            /* Màu xanh lá cây cho thành công */
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+            transition: all 0.5s ease;
+        }
+
+        .notification.show {
+            display: block;
+        }
+
+        .notification.error {
+            background-color: #dc3545;
+            /* Màu đỏ cho lỗi */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--SIDEBAR  -->
+        <div id="sidebars"></div>
+
+
+
+        <div class="main">
+            <!-- NAV -->
+            <div id="nav"></div>
+
+
+            <!-- PHẦN CONTENT -->
+            <main class="content">
+                <div class="row">
+                    <h1 class="h3 mb-3"><strong>Category Job</strong></h1>
+                    <div class="d-flex">
+                        <div class="card flex-fill" style="border: 2px solid #029393; border-radius: 9px;">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Add Category Job</h5>
+                                <div class="d-flex mt-2">
+                                    <input type="text" class="form-control" id="categoryInput" placeholder="Input">
+                                    <button id="addCategoryBtn" class="btn btn-outline-primary btn-sm rounded-3 ms-2"
+                                        style="width: 40px; height: 40px;">
+                                        <i class="align-middle" data-feather="plus-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <table class="table table-hover mt-3 my-0">
+                                <thead>
+                                    <tr>
+                                        <th class="d-none d-xl-table-cell">ID</th>
+                                        <th>Category Name</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="categoryTableBody">
+                                    <!-- Các category hiện tại sẽ được hiển thị ở đây -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </main>
+            <!-- THÔNG BÁO  -->
+            <div id="notification" class="notification"></div>
 
-
-            <table class="table table-hover mt-3 my-0">
-                <thead>
-                    <tr>
-                        <th class="d-none d-xl-table-cell" >ID</th>
-                        <th >Category Name</th>
-
-                        <th>Actions</th> <!-- Thêm cột mới cho các nút -->
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="d-none d-xl-table-cell">1</td>
-                        <td >Công nghệ thông tin</td>
-                        <td>
-                            <div class="d-flex align-items-center gap-2">
-                                <button class="btn btn-outline-primary btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="plus-circle"></i>
-                                </button>
-                                <button class="btn btn-outline-warning btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="edit-2"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="trash"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="d-none d-xl-table-cell">2</td>
-                        <td >Kỹ thuật</td>
-                        <td>
-                            <div class="d-flex align-items gap-2">
-                                <button class="btn btn-outline-primary btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="plus-circle"></i>
-                                </button>
-                                <button class="btn btn-outline-warning btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="edit-2"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="trash"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="d-none d-xl-table-cell">3</td>
-                        <td >Cơ khí</td>
-                        <td>
-                            <div class="d-flex align-items-center gap-2">
-                                <button class="btn btn-outline-primary btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="plus-circle"></i>
-                                </button>
-                                <button class="btn btn-outline-warning btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="edit-2"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm rounded-circle"
-                                    style="width: 40px; height: 40px;">
-                                    <i class="align-middle" data-feather="trash"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
+    <script src="/static/Admin/Components/sidebar.js"></script>
+    <script src="/static/Admin/Components/nav.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/Admin/admin.js"></script>
 
-</div>
+    <script>
+        // Hàm hiển thị thông báo tùy chỉnh với icon Feather
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const icons = {
+                success: 'check-circle',
+                error: 'alert-circle'
+            };
+            notification.innerHTML = `<i class="align-middle me-2" data-feather="${icons[type] || 'info'}"></i> ${message}`;
+            notification.className = `notification ${type} show`;
+            feather.replace(); // Cập nhật icon Feather
+
+            // Tự động ẩn thông báo sau 3 giây
+            setTimeout(() => notification.classList.remove('show'), 3000);
+        }
+
+        // Hàm thêm Category vào bảng
+        function addCategoryToTable({ id, categoryName }) {
+            const tableBody = document.getElementById('categoryTableBody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+        <td>${id}</td>
+        <td>${categoryName}</td>
+        <td>
+            <button class="btn btn-outline-danger btn-sm rounded-circle" style="width: 40px; height: 40px;"
+                onclick="deleteCategory(${id}, this)">
+                <i class="align-middle" data-feather="trash"></i>
+            </button>
+        </td>`;
+            tableBody.appendChild(newRow);
+            feather.replace(); // Cập nhật icon Feather
+        }
+
+        // Hàm gọi API để thêm Category
+        document.getElementById('addCategoryBtn').addEventListener('click', async () => {
+            const categoryInput = document.getElementById('categoryInput').value.trim();
+            if (!categoryInput) return showNotification('Please enter a category name.', 'error');
+
+            try {
+                const response = await fetch('http://localhost:8080/api/v1/JobCategory', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ categoryName: categoryInput })
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showNotification('Category added successfully!', 'success');
+                    addCategoryToTable(result);
+                    document.getElementById('categoryInput').value = ''; // Reset input
+                } else {
+                    const errorData = await response.json();
+                    showNotification(`Failed to add category: ${errorData.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showNotification('An error occurred while adding the category.', 'error');
+            }
+        });
+
+        // Hàm gọi API để xóa Category
+        async function deleteCategory(categoryId, deleteButton) {
+            if (!confirm('Are you sure you want to delete this category?')) return;
+
+            try {
+                const response = await fetch(`http://localhost:8080/api/v1/JobCategory/${categoryId}/get`, { method: 'DELETE' });
+
+                if (response.ok) {
+                    showNotification('Category deleted successfully!', 'success');
+                    deleteButton.closest('tr').remove(); // Xóa hàng khỏi bảng
+                } else {
+                    const errorData = await response.json();
+                    showNotification(`Failed to delete category: ${errorData.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showNotification('An error occurred while deleting the category.', 'error');
+            }
+        }
+
+        // Hàm tải tất cả các category từ server
+        async function loadCategories() {
+            try {
+                const response = await fetch('http://localhost:8080/api/v1/JobCategory');
+                const categories = await response.json();
+                categories.forEach(addCategoryToTable);
+            } catch (error) {
+                showNotification('Failed to load categories.', 'error');
+            }
+        }
+
+        // Tải danh sách category khi trang được load
+        document.addEventListener('DOMContentLoaded', loadCategories);
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

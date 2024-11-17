@@ -26,7 +26,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Resume</title>
+    <title>Thông báo</title>
 
     <link href="/static/css/app.css" rel="stylesheet" />
     <link
@@ -34,6 +34,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/card-fluid.css" />
     <link rel="stylesheet" href="/static/css/user.css" />
   </head>
 
@@ -379,52 +380,141 @@
         </nav>
 
         <main class="content">
-          <div class="container mt-4">
-            <h4>Dashboard</h4>
-
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
-                    </div>
+          <div class="container mt-1">
+            <h5>Thông báo</h5>
+            <div class="notification-card">
+              <div class="notification-item mt-3">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Tài khoản Người tìm việc của bạn đã được duyệt</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 22/09/2024
                   </div>
                 </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
               </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Bạn có 1 tin nhắn mới từ Peter</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 22/09/2024
+                  </div>
                 </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link" v
+                    >Trung tâm tài chính Credit đã xem trang của bạn</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 10/10/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Công ty Trách nhiệm hữu hạn 1 thành viên vừa cập nhật trạng
+                    thái mới</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 20/08/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Công ty Trách nhiệm hữu hạn 1 thành viên vừa cập nhật trạng
+                    thái mới</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 20/08/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Công ty Trách nhiệm hữu hạn 1 thành viên vừa cập nhật trạng
+                    thái mới</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 20/08/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Công ty Trách nhiệm hữu hạn 1 thành viên vừa cập nhật trạng
+                    thái mới</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 20/08/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
+              </div>
+              <div class="notification-item mt-2">
+                <div>
+                  <a href="#" class="notification-link"
+                    >Công ty Trách nhiệm hữu hạn 1 thành viên vừa cập nhật trạng
+                    thái mới</a
+                  >
+                  <div class="notification-date">
+                    Ngày thông báo: 20/08/2024
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="delete-link"
+                  onclick="deleteNotification(this)"
+                  >Xóa</a
+                >
               </div>
             </div>
           </div>
@@ -492,7 +582,11 @@
         </footer>
       </div>
     </div>
-
+    <script>
+      function deleteNotification(element) {
+        element.closest(".notification-item").remove();
+      }
+    </script>
     <script src="/static/js/app.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
 

@@ -34,7 +34,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="stylesheet" href="/static/css/user.css" />
   </head>
 
   <body>
@@ -366,9 +365,7 @@
                     Help Center</a
                   >
                   <div class="dropdown-divider"></div>
-                  <a
-                    class="dropdown-item"
-                    href="/static/User/V3/login&register.html"
+                  <a class="dropdown-item" href="/static/User/V3/login&register.html"
                     ><i class="align-middle me-1" data-feather="log-out"></i>Log
                     out</a
                   >
@@ -379,54 +376,242 @@
         </nav>
 
         <main class="content">
-          <div class="container mt-4">
-            <h4>Dashboard</h4>
+          <div class="container mt-1">
+            <h4 class="mb-4">MY RESUME</h4>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label"
+                    >Họ và tên <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="Nguyễn Văn A"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label"
+                    >Email cá nhân <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="nhuhoa02@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label"
+                    >Điện thoại <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactPhone"
+                    placeholder="0905123456"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="interviewAddress" class="form-label"
+                    >Địa chỉ phỏng vấn <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="interviewAddress"
+                  />
+                </div>
+              </div>
 
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="sex" class="form-label"
+                    >Giới tính <i class="fa fa-question-circle"></i
+                  ></label>
+                  <select class="form-select" id="sex">
+                    <option selected>Nam</option>
+                    <option selected>Nữ</option>
+                    <option selected>Khác</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="dateOfBirth" class="form-label"
+                    >Ngày sinh <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="dateOfBirth"
+                    value="2004-07-11"
+                  />
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
-                    </div>
+              <div class="bordered-box mb-3">
+                <h4>Trường học</h4>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="schoolName" class="form-label"
+                      >Tên trường <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input type="text" class="form-control" id="schoolName" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="degree" class="form-label">Bằng cấp</label>
+                      <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input type="text" class="form-control" id="degree" />
+                  </div>
+                  
+                  <div class="col-md-6 mt-3">
+                    <label for="startDate" class="form-label"
+                      >Ngày bắt đầu <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="startDate"
+                      value="2020-07-11"
+                    />
+                  </div>
+
+                  <div class="col-md-6 mt-3">
+                    <label for="endDate" class="form-label"
+                      >Ngày kết thúc <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="endDate"
+                      value="2022-10-07"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <label for="degree" class="form-label">GPA</label>
+                      <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input type="text" class="form-control" id="degree" />
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
+              <div class="bordered-box mb-3">
+                <h4>Kinh nghiệm</h4>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="jobTitle" class="form-label"
+                      >Tiêu đề <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input type="text" class="form-control" id="jobTitle" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="companyName" class="form-label"
+                      >Công ty <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input type="text" class="form-control" id="companyName" />
+                  </div>
+
+                  <div class="col-md-6 mt-3">
+                    <label for="startDate" class="form-label"
+                      >Ngày bắt đầu <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="startDate"
+                      value="2020-07-11"
+                    />
+                  </div>
+
+                  <div class="col-md-6 mt-3">
+                    <label for="endDate" class="form-label"
+                      >Ngày kết thúc <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="endDate"
+                      value="2022-10-07"
+                    />
+                  </div>
+
+                  <div class="mb-3 mt-3">
+                    <label for="jobDescription" class="form-label"
+                      >Mô tả công việc <i class="fa fa-question-circle"></i
+                    ></label>
+                    <div class="editor-toolbar">
+                      <button type="button"><i class="fa fa-bold"></i></button>
+                      <button type="button">
+                        <i class="fa fa-italic"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-underline"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-list-ul"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-list-ol"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-align-left"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-align-center"></i>
+                      </button>
+                      <button type="button">
+                        <i class="fa fa-align-right"></i>
+                      </button>
+                      <button type="button"><i class="fa fa-undo"></i></button>
+                      <button type="button"><i class="fa fa-redo"></i></button>
+                    </div>
+                    <div class="editor-content" contenteditable="true"></div>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div class="mb-3">
+                <label for="skills" class="form-label"
+                  >Kỹ năng <i class="fa fa-question-circle"></i
+                ></label>
+                <div class="editor-toolbar">
+                  <button type="button"><i class="fa fa-bold"></i></button>
+                  <button type="button"><i class="fa fa-italic"></i></button>
+                  <button type="button"><i class="fa fa-underline"></i></button>
+                  <button type="button"><i class="fa fa-list-ul"></i></button>
+                  <button type="button"><i class="fa fa-list-ol"></i></button>
+                  <button type="button">
+                    <i class="fa fa-align-left"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-center"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-right"></i>
+                  </button>
+                  <button type="button"><i class="fa fa-undo"></i></button>
+                  <button type="button"><i class="fa fa-redo"></i></button>
+                </div>
+                <div class="editor-content" contenteditable="true"></div>
+                <button type="button" class="btn btn-link">
+                  Xem gợi ý kỹ năng
+                </button>
+              </div>
+              <button type="button" class="btn btn-link">
+                + Kĩ năng cần thiết
+              </button>
+
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-primary">
+                  Xem trước
+                </button>
+                <button type="submit" class="btn btn-primary">
+                  Lưu
+                </button>
+              </div>
+            </form>
           </div>
         </main>
 
@@ -497,7 +682,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <script>
-      feather.replace();
+        feather.replace();
     </script>
   </body>
 </html>

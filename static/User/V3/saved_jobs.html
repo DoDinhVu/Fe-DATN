@@ -16,17 +16,16 @@
       name="keywords"
       content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"
     />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="shortcut icon" href="/static/img/icons/icon-48x48.png" />
-
-    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+    <title>Home Page</title>
 
     <link href="/static/css/app.css" rel="stylesheet" />
     <link
@@ -34,6 +33,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/card-fluid.css" />
     <link rel="stylesheet" href="/static/css/user.css" />
   </head>
 
@@ -380,50 +380,262 @@
 
         <main class="content">
           <div class="container mt-4">
-            <h4>Dashboard</h4>
-
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
+            <h4>Việc làm đã lưu</h4>
+            <div class="job-section">
+              <div class="saved-jobs">
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
                     </div>
                   </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
+                </div>
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
+                </div>
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
+                </div>
+
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
+                </div>
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
+                </div>
+                <div class="job-card">
+                  <img
+                    alt="Company logo"
+                    height="80"
+                    src="https://storage.googleapis.com/a1aa/image/4wtMJJTVBHIUH5S4PhMyIvzdlAmmZrH5QJStAJDfJtPabU3JA.jpg"
+                    width="80"
+                  />
+                  <div class="job-details">
+                    <h5>
+                      Nhân Viên Kinh Doanh Bất Động Sản - Đi Làm Ngay - Lương Up
+                      To 50 Triệu
+                    </h5>
+                    <p>Công Ty TNHH Đầu Tư Địa Ốc Aqua</p>
+                    <div class="icons">
+                      <span>
+                        <i class="fas fa-money-bill-wave"> </i>
+                        10 - 50 triệu
+                      </span>
+                      <span>
+                        <i class="fas fa-map-marker-alt"> </i>
+                        TP.HCM
+                      </span>
+                      <span>
+                        <i class="fas fa-calendar-alt"> </i>
+                        14/10/2024
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="favorite">
+                    <i
+                      class="fas fa-solid fa-heart favorite-icon"
+                      style="cursor: pointer; color: #007bff"
+                    >
+                    </i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -439,14 +651,14 @@
                     class="text-muted"
                     href="https://adminkit.io/"
                     target="_blank"
-                    ><strong>Dreamer Job</strong></a
+                    ><strong>AdminKit</strong></a
                   >
                   -
                   <a
                     class="text-muted"
                     href="https://adminkit.io/"
                     target="_blank"
-                    ><strong>Home Page</strong></a
+                    ><strong>Bootstrap Admin Template</strong></a
                   >
                   &copy;
                 </p>
@@ -492,10 +704,24 @@
         </footer>
       </div>
     </div>
+    <script>
+      // Lấy tất cả các icon yêu thích
+      const favoriteIcons = document.querySelectorAll(".favorite-icon");
 
-    <script src="/static/js/app.js"></script>
+      favoriteIcons.forEach((icon) => {
+        icon.addEventListener("click", function () {
+          // Kiểm tra màu sắc hiện tại và thay đổi màu
+          if (this.style.color === "rgb(0, 123, 255)") {
+            // Màu gốc #007bff
+            this.style.color = "#cadcf0"; // Đổi sang màu mới
+          } else {
+            this.style.color = "#007bff"; // Đổi trở về màu gốc
+          }
+        });
+      });
+    </script>
+    <script src="js/app.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-
     <script>
       feather.replace();
     </script>

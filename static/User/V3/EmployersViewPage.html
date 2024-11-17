@@ -21,12 +21,12 @@
     <link rel="shortcut icon" href="/static/img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Resume</title>
+
+    <title>Home Page</title>
 
     <link href="/static/css/app.css" rel="stylesheet" />
     <link
@@ -380,53 +380,155 @@
 
         <main class="content">
           <div class="container mt-4">
-            <h4>Dashboard</h4>
-
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
+            <h4>Nhà tuyển dụng đã xem hồ sơ của bạn</h4>
+            <div class="card job-section">
+              <div class="empty-state">
+                <img
+                  alt="Illustration of houses and trees"
+                  height="150"
+                  src="/static/img/photos/Tips for Building a More Alzheimer’s-resistant Brain.jpg"
+                  width="300"
+                />
+                <p>Chưa có nhà tuyển dụng nào xem hồ sơ của bạn</p>
               </div>
             </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
+            <section class="job">
+              <div class="header">
+                <img
+                  src="https://storage.googleapis.com/a1aa/image/aKnHVcZ1JybDHlLPAmfxLsJdfeJZUAffFW8B2fiYRdTJGP17E.jpg"
+                  alt="Light bulb icon"
+                  width="30"
+                  height="30"
+                />
+                <h4>Việc làm gợi ý</h4>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card job-card">
+                    <h5>Nhân Viên R&D</h5>
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="https://storage.googleapis.com/a1aa/image/3XKlsQ8PJ6pCFNK3gARJL8ZYPpFoYWKFUTIWy4jUsv1GP17E.jpg"
+                        alt="Wana logo"
+                        class="me-2"
+                        width="50"
+                        height="30"
+                      />
+                      <div>
+                        <div class="company">
+                          Công Ty TNHH Thực Phẩm Và Nước Giải Khát Á Châu
+                        </div>
+                        <div class="salary">
+                          <i class="fas fa-dollar-sign"></i> 10 - 15 triệu
+                        </div>
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i> Bình Dương
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer remaining-days text-end">
+                      <i class="fas fa-clock"></i> Còn 3 ngày
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card job-card">
+                    <h5>Nhân Viên QC Ngành Giấy</h5>
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="https://storage.googleapis.com/a1aa/image/FmLUkyz70B5fHSkt9C4sH7EcFNmndhkVcAm3it3ExhwLeUvTA.jpg"
+                        alt="Cheng Loong logo"
+                        class="me-2"
+                        width="50"
+                        height="30"
+                      />
+                      <div>
+                        <div class="company">
+                          Công Ty TNHH Cheng Loong Bình Dương Paper
+                        </div>
+                        <div class="salary">
+                          <i class="fas fa-dollar-sign"></i> 10 - 12 triệu
+                        </div>
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i> Bình Dương
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer remaining-days text-end">
+                      <i class="fas fa-clock"></i> Còn 4 ngày
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card job-card">
+                    <h5>Kỹ Sư Cơ Khí</h5>
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="https://storage.googleapis.com/a1aa/image/FmLUkyz70B5fHSkt9C4sH7EcFNmndhkVcAm3it3ExhwLeUvTA.jpg"
+                        alt="Cheng Loong logo"
+                        class="me-2"
+                        width="50"
+                        height="30"
+                      />
+                      <div>
+                        <div class="company">
+                          Công Ty TNHH Cheng Loong Bình Dương Paper
+                        </div>
+                        <div class="salary">
+                          <i class="fas fa-dollar-sign"></i> 10 - 13 triệu
+                        </div>
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i> Bình Dương
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer remaining-days text-end">
+                      <i class="fas fa-clock"></i> Còn 10 ngày
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card job-card">
+                    <h5>Nhân Viên Văn Phòng (Tốt Nghiệp Cơ Khí)</h5>
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="https://storage.googleapis.com/a1aa/image/FmLUkyz70B5fHSkt9C4sH7EcFNmndhkVcAm3it3ExhwLeUvTA.jpg"
+                        alt="Cheng Loong logo"
+                        class="me-2"
+                        width="50"
+                        height="30"
+                      />
+                      <div>
+                        <div class="company">
+                          Công Ty TNHH Cheng Loong Bình Dương Paper
+                        </div>
+                        <div class="salary">
+                          <i class="fas fa-dollar-sign"></i> 9.5 - 15 triệu
+                        </div>
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i> Bình Dương
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer remaining-days text-end">
+                      <i class="fas fa-clock"></i> Còn 20 ngày
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
-                </div>
-              </div>
-            </div>
+            </section>
           </div>
         </main>
 
@@ -439,14 +541,14 @@
                     class="text-muted"
                     href="https://adminkit.io/"
                     target="_blank"
-                    ><strong>Dreamer Job</strong></a
+                    ><strong>AdminKit</strong></a
                   >
                   -
                   <a
                     class="text-muted"
                     href="https://adminkit.io/"
                     target="_blank"
-                    ><strong>Home Page</strong></a
+                    ><strong>Bootstrap Admin Template</strong></a
                   >
                   &copy;
                 </p>
@@ -492,8 +594,20 @@
         </footer>
       </div>
     </div>
-
-    <script src="/static/js/app.js"></script>
+    <script>
+      function toggleFavorite(element) {
+        element.classList.toggle("active");
+        const icon = element.querySelector("i");
+        if (element.classList.contains("active")) {
+          icon.classList.remove("far");
+          icon.classList.add("fas");
+        } else {
+          icon.classList.remove("fas");
+          icon.classList.add("far");
+        }
+      }
+    </script>
+    <script src="js/app.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
 
     <script>

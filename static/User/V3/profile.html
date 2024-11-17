@@ -34,7 +34,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="stylesheet" href="/static/css/user.css" />
   </head>
 
   <body>
@@ -379,54 +378,103 @@
         </nav>
 
         <main class="content">
-          <div class="container mt-4">
-            <h4>Dashboard</h4>
-
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
-                    </div>
+          <div class="container mt-1">
+            <h4 class="mb-4">Thông tin cá nhân</h4>
+            <form id="profileForm" onsubmit="return validateForm()">
+              <div class="mb-3">
+                <label class="form-label">Ảnh đại diện</label>
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="Placeholder image for profile picture"
+                    class="rounded-circle me-3"
+                    height="100"
+                    id="profileImage"
+                    src="/static/img/avatars/avatar-5.jpg"
+                    width="100"
+                  />
+                  <div
+                    class="upload-btn"
+                    onclick="document.getElementById('profileImageInput').click()"
+                  >
+                    Tải ảnh lên
                   </div>
+                  <input
+                    accept="image/*"
+                    id="profileImageInput"
+                    onchange="loadImage(event)"
+                    style="display: none"
+                    type="file"
+                  />
+                </div>
+                <small class="form-text text-muted"
+                  >Định dạng .JPG, .JPEG, .PNG dung lượng thấp hơn 300 KB với
+                  kích thước tối thiểu 50x50 px</small
+                >
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for="fullName">Họ và tên</label>
+                  <input
+                    class="form-control"
+                    id="fullName"
+                    type="text"
+                    value="Jerry Joen"
+                  />
+                  <div class="error" id="fullNameError"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for="dob">Ngày sinh</label>
+                  <input
+                    class="form-control"
+                    id="dateOfBirth"
+                    value="2004-07-11"
+                    type="date"
+                  />
+                  <div class="error" id="dobError"></div>
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3">
+                  <label for="contactEmail" class="form-label"
+                    >Email cá nhân <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="nhuhoa02@gmail.com"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for="phone">Số điện thoại</label>
+                  <input
+                    class="form-control"
+                    id="phone"
+                    placeholder="0768555225"
+                    type="text"
+                  />
+                  <div class="error" id="phoneError"></div>
                 </div>
               </div>
-            </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="address">Địa chỉ</label>
+                <input
+                  class="form-control"
+                  id="address"
+                  placeholder="Ví dụ: Số nhà 98A, phố Ngụy Như Kon Tum, phường ..."
+                  type="text"
+                />
+                <div class="error" id="addressError"></div>
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+                <button class="btn btn-secondary me-3" type="button">
+                  Chỉnh sửa
+                </button>
+                <button class="btn btn-primary" type="submit">Lưu</button>
+              </div>
+            </form>
           </div>
         </main>
 
@@ -495,7 +543,6 @@
 
     <script src="/static/js/app.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-
     <script>
       feather.replace();
     </script>

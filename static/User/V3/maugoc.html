@@ -18,10 +18,9 @@
     />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="shortcut icon" href="/static/img/icons/icon-48x48.png" />
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -34,7 +33,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="stylesheet" href="/static/css/user.css" />
   </head>
 
   <body>
@@ -43,14 +41,6 @@
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
           <a class="sidebar-brand" href="index.html">
-            <img
-              alt="Logo"
-              class="rounded-circle me-3"
-              height="50"
-              id="logo"
-              src="/static/img/icons/logo2.jpg"
-              width="50"
-            />
             <span class="align-middle">Dreamers</span>
           </a>
 
@@ -58,7 +48,7 @@
             <li class="sidebar-header">Pages</li>
 
             <li class="sidebar-item active">
-              <a class="sidebar-link" href="/static/User/V3/dashboard.html">
+              <a class="sidebar-link" href="index.html">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
@@ -70,22 +60,16 @@
                 <span class="align-middle">Profile</span>
               </a>
             </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/static/User/V3/resume_.html">
-                <i class="align-middle" data-feather="clipboard"></i>
-                <span class="align-middle">Resume</span>
-              </a>
-            </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/calender.html">
-                <i class="align-middle" data-feather="calendar"></i>
+                <i class="align-middle" data-feather="square"></i>
                 <span class="align-middle">Calender</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/static/User/V3/apply.html">
+              <a class="sidebar-link" href="/static/User/V3/applied_job.html">
                 <i class="align-middle" data-feather="check-square"></i>
                 <span class="align-middle">Applied job</span>
               </a>
@@ -96,28 +80,28 @@
                 class="sidebar-link"
                 href="/static/User/V3/EmployersViewPage.html"
               >
-                <i class="align-middle" data-feather="users"></i>
+                <i class="align-middle" data-feather="coffee"></i>
                 <span class="align-middle">Recruiter follow</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/saved_jobs.html">
-                <i class="align-middle" data-feather="bookmark"></i>
+                <i class="align-middle" data-feather="bar-chart-2"></i>
                 <span class="align-middle">Bookmarks</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="#">
-                <i class="align-middle" data-feather="message-square"></i>
+                <i class="align-middle" data-feather="grid"></i>
                 <span class="align-middle">Messages</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/Notification.html">
-                <i class="align-middle" data-feather="bell"></i>
+                <i class="align-middle" data-feather="align-left"></i>
                 <span class="align-middle">Notifications</span>
               </a>
             </li>
@@ -142,7 +126,8 @@
                   data-bs-toggle="dropdown"
                 >
                   <div class="position-relative">
-                    <i class="align-middle" data-feather="bell"></i>
+                    <i class="fa fa-bell align-middle" aria-hidden="true"></i>
+                    <!-- <i class="align-middle" data-feather="bell"></i> -->
                     <span class="indicator">4</span>
                   </div>
                 </a>
@@ -256,7 +241,7 @@
                       <div class="row g-0 align-items-center">
                         <div class="col-2">
                           <img
-                            src="/static/img/avatars/avatar-2.jpg"
+                            src="img/avatars/avatar-2.jpg"
                             class="avatar img-fluid rounded-circle"
                             alt="William Harris"
                           />
@@ -274,7 +259,7 @@
                       <div class="row g-0 align-items-center">
                         <div class="col-2">
                           <img
-                            src="/static/img/avatars/avatar-4.jpg"
+                            src="img/avatars/avatar-4.jpg"
                             class="avatar img-fluid rounded-circle"
                             alt="Christina Mason"
                           />
@@ -292,7 +277,7 @@
                       <div class="row g-0 align-items-center">
                         <div class="col-2">
                           <img
-                            src="/static/img/avatars/avatar-3.jpg"
+                            src="img/avatars/avatar-3.jpg"
                             class="avatar img-fluid rounded-circle"
                             alt="Sharon Lessman"
                           />
@@ -335,30 +320,20 @@
                   <span class="text-dark">Charles Hall</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="/static/User/V3/profile.html"
+                  <a class="dropdown-item" href="pages-profile.html"
                     ><i class="align-middle me-1" data-feather="user"></i>
                     Profile</a
                   >
-
                   <a class="dropdown-item" href="#"
-                    ><i class="align-middle me-1" data-feather="key"></i> Forgot
-                    password</a
-                  >
-                  <a class="dropdown-item" href="#"
-                    ><i
-                      class="align-middle me-1"
-                      data-feather="alert-octagon"
-                    ></i>
-                    Change password</a
+                    ><i class="align-middle me-1" data-feather="pie-chart"></i>
+                    Analytics</a
                   >
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="index.html"
                     ><i class="align-middle me-1" data-feather="settings"></i>
                     Settings & Privacy</a
                   >
-                  <a
-                    class="dropdown-item"
-                    href="/static/User/V3/User_Manual.html"
+                  <a class="dropdown-item" href="#"
                     ><i
                       class="align-middle me-1"
                       data-feather="help-circle"
@@ -366,12 +341,7 @@
                     Help Center</a
                   >
                   <div class="dropdown-divider"></div>
-                  <a
-                    class="dropdown-item"
-                    href="/static/User/V3/login&register.html"
-                    ><i class="align-middle me-1" data-feather="log-out"></i>Log
-                    out</a
-                  >
+                  <a class="dropdown-item" href="#">Log out</a>
                 </div>
               </li>
             </ul>
@@ -379,54 +349,308 @@
         </nav>
 
         <main class="content">
-          <div class="container mt-4">
-            <h4>Dashboard</h4>
-
-            <div class="row text-center mt-4 d-flex align-items-stretch">
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-green card-shadow flex-fill">
-                  TOTAL RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
+          <div class="container mt-1">
+            <h4 class="mb-4">Thông tin cơ bản</h4>
+            <form>
+              <div class="mb-3">
+                <label for="jobTitle" class="form-label"
+                  >Tiêu đề tin tuyển dụng <i class="fa fa-question-circle"></i
+                ></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="jobTitle"
+                  placeholder="Vị trí hiển thị đang tuyển"
+                />
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="industry" class="form-label"
+                    >Ngành nghề <i class="fa fa-question-circle"></i
+                  ></label>
+                  <select class="form-select" id="industry">
+                    <option selected>Chọn ngành nghề</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="experience" class="form-label"
+                    >Kinh nghiệm <i class="fa fa-question-circle"></i
+                  ></label>
+                  <select class="form-select" id="experience">
+                    <option selected>Chọn kinh nghiệm</option>
+                  </select>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  APPROVED RESUMES<br />
-                  <span style="font-size: 2rem">0</span>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="quantity" class="form-label"
+                    >Số lượng tuyển <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    placeholder="Chỉ nhập số, VD: 10"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="deadline" class="form-label"
+                    >Hạn nộp hồ sơ <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="deadline"
+                    value="2024-07-11"
+                  />
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-blue card-shadow flex-fill">
-                  BOOKMARKED<br />
-                  <span style="font-size: 2rem">0</span>
+              <div class="bordered-box mb-3">
+                <h5>Địa chỉ 1</h5>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="city" class="form-label"
+                      >Tỉnh / Thành phố <i class="fa fa-question-circle"></i
+                    ></label>
+                    <select class="form-select" id="city">
+                      <option selected>Chọn Tỉnh hoặc Thành phố</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="district" class="form-label"
+                      >Quận / Huyện <i class="fa fa-question-circle"></i
+                    ></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      placeholder="VD: Quận 1"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label"
+                    >Số nhà, tên đường <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="VD: 23 Trần Cao Vân, phường Đa Kao"
+                  />
+                </div>
+                <button type="button" class="btn btn-link">
+                  + Thêm địa điểm làm việc
+                </button>
+              </div>
+              <h4 class="mb-4">Yêu cầu chung</h4>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="workType" class="form-label"
+                    >Hình thức làm việc <i class="fa fa-question-circle"></i
+                  ></label>
+                  <select class="form-select" id="workType">
+                    <option selected>Chọn hình thức làm việc</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="level" class="form-label"
+                    >Cấp bậc <i class="fa fa-question-circle"></i
+                  ></label>
+                  <select class="form-select" id="level">
+                    <option selected>Chọn cấp bậc</option>
+                  </select>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mb-3 d-flex">
-                <div class="card card-custom card-orange card-shadow flex-fill">
-                  APPLIED JOBS<br />
-                  <span style="font-size: 2rem">0</span>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="minSalary" class="form-label"
+                    >Lương tối thiểu <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="minSalary"
+                    placeholder="0"
+                  />
                 </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="card col-md-6 mb-3">
-                <div class="recent-activities">
-                  <h5>Recent Activities</h5>
-                  <div class="activity-item">
-                    <i class="fas fa-bell text-success"></i>
-                    <div>
-                      <div>3 days ago</div>
-                      <div>Confirmation Email</div>
-                    </div>
+                <div class="col-md-6">
+                  <label for="maxSalary" class="form-label"
+                    >Lương tối đa <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="maxSalary"
+                    placeholder="0"
+                  />
+                  <div class="form-check mt-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="negotiable"
+                    />
+                    <label class="form-check-label" for="negotiable">
+                      Lương thỏa thuận
+                    </label>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <div class="recent-bookmarks">
-                  <h5>Recent Bookmarks</h5>
+              <button type="button" class="btn btn-link">
+                + Thời gian thử việc
+              </button>
+              <button type="button" class="btn btn-link">
+                + Yêu cầu bằng cấp
+              </button>
+              <button type="button" class="btn btn-link">
+                + Yêu cầu giới tính
+              </button>
+              <button type="button" class="btn btn-link">
+                + Yêu cầu độ tuổi
+              </button>
+              <h4 class="mb-4">Công việc chi tiết</h4>
+              <div class="mb-3">
+                <label for="jobDescription" class="form-label"
+                  >Mô tả công việc <i class="fa fa-question-circle"></i
+                ></label>
+                <div class="editor-toolbar">
+                  <button type="button"><i class="fa fa-bold"></i></button>
+                  <button type="button"><i class="fa fa-italic"></i></button>
+                  <button type="button"><i class="fa fa-underline"></i></button>
+                  <button type="button"><i class="fa fa-list-ul"></i></button>
+                  <button type="button"><i class="fa fa-list-ol"></i></button>
+                  <button type="button">
+                    <i class="fa fa-align-left"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-center"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-right"></i>
+                  </button>
+                  <button type="button"><i class="fa fa-undo"></i></button>
+                  <button type="button"><i class="fa fa-redo"></i></button>
+                </div>
+                <div class="editor-content" contenteditable="true"></div>
+                <button type="button" class="btn btn-link">
+                  Xem gợi ý mô tả công việc
+                </button>
+              </div>
+              <div class="mb-3">
+                <label for="jobRequirements" class="form-label"
+                  >Yêu cầu công việc <i class="fa fa-question-circle"></i
+                ></label>
+                <div class="editor-toolbar">
+                  <button type="button"><i class="fa fa-bold"></i></button>
+                  <button type="button"><i class="fa fa-italic"></i></button>
+                  <button type="button"><i class="fa fa-underline"></i></button>
+                  <button type="button"><i class="fa fa-list-ul"></i></button>
+                  <button type="button"><i class="fa fa-list-ol"></i></button>
+                  <button type="button">
+                    <i class="fa fa-align-left"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-center"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-right"></i>
+                  </button>
+                  <button type="button"><i class="fa fa-undo"></i></button>
+                  <button type="button"><i class="fa fa-redo"></i></button>
+                </div>
+                <div class="editor-content" contenteditable="true"></div>
+                <button type="button" class="btn btn-link">
+                  Xem gợi ý yêu cầu công việc
+                </button>
+              </div>
+              <div class="mb-3">
+                <label for="benefits" class="form-label"
+                  >Quyền lợi <i class="fa fa-question-circle"></i
+                ></label>
+                <div class="editor-toolbar">
+                  <button type="button"><i class="fa fa-bold"></i></button>
+                  <button type="button"><i class="fa fa-italic"></i></button>
+                  <button type="button"><i class="fa fa-underline"></i></button>
+                  <button type="button"><i class="fa fa-list-ul"></i></button>
+                  <button type="button"><i class="fa fa-list-ol"></i></button>
+                  <button type="button">
+                    <i class="fa fa-align-left"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-center"></i>
+                  </button>
+                  <button type="button">
+                    <i class="fa fa-align-right"></i>
+                  </button>
+                  <button type="button"><i class="fa fa-undo"></i></button>
+                  <button type="button"><i class="fa fa-redo"></i></button>
+                </div>
+                <div class="editor-content" contenteditable="true"></div>
+                <button type="button" class="btn btn-link">
+                  Xem gợi ý quyền lợi
+                </button>
+              </div>
+              <button type="button" class="btn btn-link">
+                + Kĩ năng cần thiết
+              </button>
+              <h4 class="mb-4">Thông tin người liên hệ</h4>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label"
+                    >Họ và tên <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="Đỗ Đình Vũ"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label"
+                    >Email nhận hồ sơ <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="meganblake231@gmail.com"
+                  />
                 </div>
               </div>
-            </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label"
+                    >Điện thoại <i class="fa fa-question-circle"></i
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactPhone"
+                    placeholder="0587092234"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-link mt-4">
+                    + Thêm số điện thoại
+                  </button>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="interviewAddress" class="form-label"
+                  >Địa chỉ phỏng vấn <i class="fa fa-question-circle"></i
+                ></label>
+                <input type="text" class="form-control" id="interviewAddress" />
+              </div>
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary">
+                  Xem trước
+                </button>
+                <button type="submit" class="btn btn-primary">
+                  Lưu & tiếp tục
+                </button>
+              </div>
+            </form>
           </div>
         </main>
 
@@ -493,11 +717,6 @@
       </div>
     </div>
 
-    <script src="/static/js/app.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <script>
-      feather.replace();
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

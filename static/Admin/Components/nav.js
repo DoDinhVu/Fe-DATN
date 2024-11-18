@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
                                 data-bs-toggle="dropdown">
-                                <img src="/static/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1"
+                                <img src="/static/img/avatars/thface.jpg" class="avatar img-fluid rounded me-1"
                                     alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">

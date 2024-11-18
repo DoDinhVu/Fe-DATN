@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span class="align-middle">User</span>
                         </a>
                     </li>
+                    <li class="sidebar-items" data-page="user">
+                        <a class="sidebar-link" href="/static/Admin/Pages/job.html" onclick="">
+                            <i class="align-middle" data-feather="briefcase"></i>
+                            <span class="align-middle">Job Post</span>
+                        </a>
+                    </li>
                     <li class="sidebar-items" data-page="category_job">
                         <a class="sidebar-link" href="/static/Admin/Pages/category_job.html" >
                             <i class="align-middle" data-feather="shopping-bag"></i>

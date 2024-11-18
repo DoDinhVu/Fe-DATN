@@ -59,8 +59,57 @@
 
             <!-- PHẦN CONTENT -->
                 <main class="content">
+                    <h1 class="h3 mb-3"><strong>Candidate</strong></h1>
+                    <!-- Form nhập -->
+                    <div class="row mt-4">
+                        <div class="col-12 col-lg-12 col-xxl-12">
+                            <div class="card flex-fill">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Add New Candidate</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="candidateName" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="candidateName" placeholder="Enter Candidate Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="candidatePhone" class="form-label">Phone</label>
+                                            <input type="text" class="form-control" id="candidatePhone" placeholder="Enter Phone Number" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="candidateAddress" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="candidateAddress" placeholder="Enter Address" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="candidateSex" class="form-label">Sex</label>
+                                            <select class="form-select" id="candidateSex" required>
+                                                <option value="">Select Sex</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="candidateDob" class="form-label">Date of Birth</label>
+                                            <input type="date" class="form-control" id="candidateDob" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="candidateImage" class="form-label">Upload Image</label>
+                                            <input type="file" class="form-control" id="candidateImage">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    <!-- Table -->
                     <div class="row">
-                        <h1 class="h3 mb-3"><strong>Candidate</strong></h1>
+                        
                         <div class="col-12 col-lg-12 col-xxl-12 ">
                             <div class="card flex-fill">
                                 <div class="card-header">
@@ -72,6 +121,7 @@
                                         <tr>
                                             <th>Name</th>
                                             <th class="d-none d-xl-table-cell">Phone</th>
+                                            <th>Email</th>
                                             <th class="d-none d-xl-table-cell">Address</th>
                                             <th>Sex</th>
                                             <th class="d-none d-md-table-cell">Image</th>
@@ -84,6 +134,7 @@
                                         <tr>
                                             <td>Project Apollo</td>
                                             <td class="d-none d-xl-table-cell">09876543</td>
+                                            <td class="d-none d-xl-table-cell">abc@gmail.com</td>                                          
                                             <td class="d-none d-xl-table-cell">Da Nang</td>
                                             <td class="d-none d-md-table-cell">Male</td>
                                             <td class="d-none d-md-table-cell">...</td>
@@ -106,6 +157,7 @@
                                         <tr>
                                             <td>Project Apollo</td>
                                             <td class="d-none d-xl-table-cell">09876543</td>
+                                            <td class="d-none d-xl-table-cell">abc@gmail.com</td>                                          
                                             <td class="d-none d-xl-table-cell">Da Nang</td>
                                             <td class="d-none d-md-table-cell">Male</td>
                                             <td class="d-none d-md-table-cell">...</td>
@@ -128,6 +180,7 @@
                                         <tr>
                                             <td>Project Apollo</td>
                                             <td class="d-none d-xl-table-cell">09876543</td>
+                                            <td class="d-none d-xl-table-cell">abc@gmail.com</td>                                          
                                             <td class="d-none d-xl-table-cell">Da Nang</td>
                                             <td class="d-none d-md-table-cell">Male</td>
                                             <td class="d-none d-md-table-cell">...</td>
@@ -151,6 +204,7 @@
                                         <tr>
                                             <td>Project Apollo</td>
                                             <td class="d-none d-xl-table-cell">09876543</td>
+                                            <td class="d-none d-xl-table-cell">abc@gmail.com</td>                                          
                                             <td class="d-none d-xl-table-cell">Da Nang</td>
                                             <td class="d-none d-md-table-cell">Male</td>
                                             <td class="d-none d-md-table-cell">...</td>

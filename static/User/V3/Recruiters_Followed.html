@@ -42,7 +42,7 @@
       <!-- sidebar -->
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="index.html">
+          <a class="sidebar-brand" href="/static/User/Index.html">
             <img
               alt="Logo"
               class="rounded-circle me-3"
@@ -71,10 +71,33 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/static/User/V3/resume_.html">
+              <a
+                href="/static/User/V3/resume_.html"
+                class="sidebar-link active"
+                data-bs-toggle="collapse"
+                data-bs-target="#myJobsSubmenu"
+                aria-expanded="true"
+              >
                 <i class="align-middle" data-feather="clipboard"></i>
-                <span class="align-middle">Resume</span>
+                Resume
+                <i class="fas fa-chevron-down ms-auto"></i>
               </a>
+              <div id="myJobsSubmenu" class="collapse">
+                <a
+                  href="/static/User/V3/resumeList.html"
+                  class="sidebar-link sub-item"
+                >
+                  <i class="align-middle" data-feather="list"></i>
+                  Resume List
+                </a>
+                <a
+                  href="/static/User/V3/addResume.html"
+                  class="sidebar-link sub-item"
+                >
+                  <i class="align-middle" data-feather="plus"></i>
+                  Add resume
+                </a>
+              </div>
             </li>
 
             <li class="sidebar-item">
@@ -124,6 +147,7 @@
           </ul>
         </div>
       </nav>
+
       <div class="main">
         <!-- nav head -->
         <nav class="navbar navbar-expand navbar-light navbar-bg">

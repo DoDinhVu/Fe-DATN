@@ -13,7 +13,7 @@ body {
 .form-text {
   color: #6c757d;
 }
-.btn-primary,
+/* .btn-primary, */
 .btn-secondary {
   width: 100px;
 }
@@ -34,6 +34,9 @@ body {
 }
 .btn-link:hover {
   color: #5a5a5a;
+}
+.fa-chevron-down {
+  padding-left: 5rem;
 }
 .bordered-box {
   border: 1px solid #e2e6ea;

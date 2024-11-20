@@ -41,6 +41,14 @@
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
           <a class="sidebar-brand" href="index.html">
+            <img
+              alt="Logo"
+              class="rounded-circle me-3"
+              height="50"
+              id="logo"
+              src="/static/img/icons/logo2.jpg"
+              width="50"
+            />
             <span class="align-middle">Dreamers</span>
           </a>
 
@@ -48,7 +56,7 @@
             <li class="sidebar-header">Pages</li>
 
             <li class="sidebar-item active">
-              <a class="sidebar-link" href="index.html">
+              <a class="sidebar-link" href="/static/User/V3/dashboard.html">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
@@ -60,16 +68,42 @@
                 <span class="align-middle">Profile</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a
+                href="/static/User/V3/resume_.html"
+                class="sidebar-link active"
+                data-bs-toggle="collapse"
+                data-bs-target="#myJobsSubmenu"
+                aria-expanded="true"
+              >
+                <i class="align-middle" data-feather="clipboard"></i>
+                Resume
+                <i class="fas fa-chevron-down ms-auto"></i>
+              </a>
+              <div id="myJobsSubmenu" class="collapse show">
+                <a href="#" class="sidebar-link sub-item">
+                  <i class="align-middle" data-feather="list"></i>
+                  Resume List
+                </a>
+                <a
+                  href="/static/User/V3/addResume.html"
+                  class="sidebar-link sub-item"
+                >
+                  <i class="align-middle" data-feather="plus"></i>
+                  Add resume
+                </a>
+              </div>
+            </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/calender.html">
-                <i class="align-middle" data-feather="square"></i>
+                <i class="align-middle" data-feather="calendar"></i>
                 <span class="align-middle">Calender</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/static/User/V3/applied_job.html">
+              <a class="sidebar-link" href="/static/User/V3/apply.html">
                 <i class="align-middle" data-feather="check-square"></i>
                 <span class="align-middle">Applied job</span>
               </a>
@@ -80,28 +114,28 @@
                 class="sidebar-link"
                 href="/static/User/V3/EmployersViewPage.html"
               >
-                <i class="align-middle" data-feather="coffee"></i>
+                <i class="align-middle" data-feather="users"></i>
                 <span class="align-middle">Recruiter follow</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/saved_jobs.html">
-                <i class="align-middle" data-feather="bar-chart-2"></i>
+                <i class="align-middle" data-feather="bookmark"></i>
                 <span class="align-middle">Bookmarks</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="#">
-                <i class="align-middle" data-feather="grid"></i>
+                <i class="align-middle" data-feather="message-square"></i>
                 <span class="align-middle">Messages</span>
               </a>
             </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="/static/User/V3/Notification.html">
-                <i class="align-middle" data-feather="align-left"></i>
+                <i class="align-middle" data-feather="bell"></i>
                 <span class="align-middle">Notifications</span>
               </a>
             </li>

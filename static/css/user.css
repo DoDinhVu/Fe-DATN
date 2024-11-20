@@ -235,6 +235,9 @@ body {
   color: #6c757d;
   margin-bottom: 10px;
 }
+.event-card:hover {
+  transform: translateY(-5px);
+}
 .event-speaker {
   color: #6c63ff;
   font-weight: bold;
@@ -307,7 +310,7 @@ body {
 .badge-pill:hover {
   background-color: #efe3e3;
 }
-
+.event-card,
 .search-bar,
 .filter-bar,
 .job-tags,
@@ -321,6 +324,9 @@ body {
 }
 .calendar-info {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.fa-chevron-down {
+  padding-left: 5rem;
 }
 .job-card-apply {
   display: flex;
@@ -363,6 +369,14 @@ body {
 }
 .status-in-process {
   background-color: #ffc107;
+}
+.btn-add-resume {
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px;
+  float: right;
 }
 .calendar-card img {
   width: 100%;
